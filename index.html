@@ -135,6 +135,39 @@
         &copy; <span class="footer__year"></span> Mesto Russia
       </p>
     </footer>
+    <div class="popup">
+      <div class="popup__container">
+        <button
+          class="popup__close"
+          type="button"
+          aria-label="Закрыть"
+        ></button>
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <form class="popup__form" name="edit-profile" novalidate>
+          <input
+            class="popup__input popup__input_type_name"
+            type="text"
+            name="name"
+            placeholder="Имя"
+            minlength="2"
+            maxlength="40"
+            required
+            autocomplete="off"
+          >
+          <input
+            class="popup__input popup__input_type_about"
+            type="text"
+            name="about"
+            placeholder="О себе"
+            minlength="2"
+            maxlength="200"
+            required
+            autocomplete="off"
+          >
+          <button class="popup__submit" type="submit">Сохранить</button>
+        </form>
+      </div>
+    </div>
     <script src="./js/index.js"></script>
   </body>
 </html>

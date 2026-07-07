@@ -5,3 +5,7 @@ likeButtons.forEach((button) => {
     button.classList.toggle('element__like-button_active');
   });
 });
+
+const yearElement = document.querySelector('.footer__year');
+const currentYear = new Date().getFullYear();
+yearElement.textContent = currentYear;

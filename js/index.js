@@ -46,12 +46,18 @@ function createCard(cardName, cardLink) {
   const cardTitle = cardElement.querySelector('.element__title');
   const likeButton = cardElement.querySelector('.element__like-button');
 
+  const deleteButton = cardElement.querySelector('.element__delete-button');
+
   cardImage.src = cardLink;
   cardImage.alt = cardName;
   cardTitle.textContent = cardName;
 
   likeButton.addEventListener('click', function (evt) {
     evt.target.classList.toggle('element__like-button_active');
+  });
+
+  deleteButton.addEventListener('click', function () {
+    cardElement.remove();
   });
 
   return cardElement;

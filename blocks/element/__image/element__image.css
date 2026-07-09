@@ -3,4 +3,10 @@
   height: 282px;
   display: block;
   object-fit: cover;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.element__image:hover {
+  filter: brightness(0.8);
 }
